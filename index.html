@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte | Futuro Sustentável</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --verde-escuro: #006400;
+            --verde-medio: #4CAF50;
+            --bege: #f5f0e6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        You have unsaved changes on this file that can be restored.
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Menu */
+        header {
+            background-color: var(--verde-escuro);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .mobile-menu {
+            display: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        
+        /* Banner */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1625246333193-4a2a5c7e5b5e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 70px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--verde-medio);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+        
+        /* Seções */
+        section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--verde-escuro);
+        }
+        
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card h3 {
+            color: var(--verde-escuro);
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--verde-escuro);
+            color: white;
+            text-align: center;
+            padding: 3rem 5%;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Agro Forte</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="producao.html">Produção Responsável</a>
+                <a href="sustentabilidade.html">Sustentabilidade</a>
+                <a href="desafios.html">Desafios</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <i class="fas fa-bars mobile-menu"></i>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Equilíbrio entre produção agrícola e preservação do meio ambiente</p>
+            <a href="#cards" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+    <!-- Introdução -->
+    <section>
+        <h2>Bem-vindo ao Agro Forte</h2>
+        <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 4rem;">
+            O agronegócio é essencial para o mundo, mas precisa ser feito com responsabilidade. 
+            Este site mostra como é possível produzir alimentos de forma eficiente respeitando o meio ambiente.
+        </p>
+    </section>
+
+    <!-- 3 Cards -->
+    <section id="cards">
+        <h2>Principais Temas</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1625246333193-4a2a5c7e5b5e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Produção">
+                <div class="card-content">
+                    <h3>Produção Responsável</h3>
+                    <p>Tecnologias modernas que aumentam a produtividade com menor impacto ambiental.</p>
+                    <a href="producao.html" style="color: var(--verde-medio); margin-top: 1rem; display: inline-block;">Saiba mais →</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b0f5c8e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Sustentabilidade">
+                <div class="card-content">
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas que preservam solo, água e biodiversidade para as próximas gerações.</p>
+                    <a href="sustentabilidade.html" style="color: var(--verde-medio); margin-top: 1rem; display: inline-block;">Saiba mais →</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519098901909-1b4a2a5c7e5b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Desafios">
+                <div class="card-content">
+                    <h3>Desafios Ambientais</h3>
+                    <p>Entenda os principais problemas e como podemos superá-los juntos.</p>
+                    <a href="desafios.html" style="color: var(--verde-medio); margin-top: 1rem; display: inline-block;">Saiba mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" style="position: fixed; bottom: 30px; right: 30px; background: var(--verde-medio); color: white; border: none; width: 50px; height: 50px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; display: none; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - Agro Forte | Futuro Sustentável</p>
+        <p>Um projeto educativo para o AGRINHO 2026</p>
+    </footer>
+
+    <script>
+        // Menu mobile (simples por enquanto)
+        console.log("Site carregado com sucesso!");
+
+        // Botão voltar ao topo
+        const backToTop = document.getElementById('backToTop');You have unsaved changes on this file that can be restored.
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
