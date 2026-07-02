@@ -3,43 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agro Forte - Projeto educativo AGRINHO 2026 sobre agricultura sustentável, produção responsável e futuro do campo.">
+    <meta name="keywords" content="agrinho, agro forte, agricultura sustentável, meio ambiente, campo">
     <title>Agro Forte | Futuro Sustentável</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menu -->
+    <a href="#home" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- ===== MENU ===== -->
     <header>
-        <nav>
-            <a href="#" class="logo">Agro Forte</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="producao.html">Produção Responsável</a>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-seedling"></i> Agro <span>Forte</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="producao.html">Produção</a>
                 <a href="sustentabilidade.html">Sustentabilidade</a>
                 <a href="desafios.html">Desafios</a>
-                <a href="contato.html">Contato</a>
+                <a href="#contato">Contato</a>
             </div>
-            <i class="fas fa-bars mobile-menu" id="mobile-menu"></i>
+            <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
-    <!-- Hero com imagem gerada por IA -->
-    <section id="home" class="hero" style="background-image: url('assets/banner-sustentavel.jpg');">
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <p>Equilíbrio entre produção agrícola e preservação do meio ambiente</p>
-            <a href="#cards" class="btn">Saiba mais</a>
+            <span class="hero-tag">🌾 Projeto AGRINHO 2026</span>
+            <h1>Agro Forte,<br><span class="highlight">Futuro Sustentável</span></h1>
+            <p>Equilíbrio entre produção agrícola e preservação do meio ambiente. O campo que alimenta o mundo também cuida dele.</p>
+            <div class="hero-buttons">
+                <a href="#cards" class="btn btn-primary">
+                    <i class="fas fa-leaf"></i> Saiba mais
+                </a>
+                <a href="#sobre" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i> Conheça o projeto
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- ... resto do conteúdo (introdução, cards, etc.) ... -->
+    <!-- ===== ESTATÍSTICAS ===== -->
+    <section class="stats reveal">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <i class="fas fa-tractor"></i>
+                <h3 class="counter" data-target="120">0</h3>
+                <p>Municípios atendidos</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Estudantes impactados</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-tree"></i>
+                <h3 class="counter" data-target="30">0</h3>
+                <p>Anos de história</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award"></i>
+                <h3 class="counter" data-target="2026">0</h3>
+                <p>Edição atual</p>
+            </div>
+        </div>
+    </section>
 
-    <button id="backToTop" class="back-to-top">↑</button>
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="about reveal">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="section-tag">Sobre o projeto</span>
+                <h2>Conectando o <span class="highlight">campo</span> à <span class="highlight">cidade</span></h2>
+                <p>O <strong>Agro Forte</strong> nasceu da vontade de mostrar que a agricultura moderna pode — e deve — caminhar lado a lado com a preservação ambiental. Através do programa <strong>AGRINHO</strong>, levamos conhecimento, tecnologia e consciência ambiental para escolas e comunidades rurais.</p>
+                <p>Acreditamos que o futuro do agro é <em>forte</em> porque é <em>responsável</em>: produz mais, desperdiça menos e protege o planeta para as próximas gerações.</p>
+                <ul class="about-features">
+                    <li><i class="fas fa-check-circle"></i> Educação ambiental nas escolas</li>
+                    <li><i class="fas fa-check-circle"></i> Práticas agrícolas sustentáveis</li>
+                    <li><i class="fas fa-check-circle"></i> Valorização do produtor rural</li>
+                    <li><i class="fas fa-check-circle"></i> Tecnologia no campo</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80" alt="Agricultura sustentável" loading="lazy">
+                <div class="about-badge">
+                    <i class="fas fa-leaf"></i>
+                    <span>100% Sustentável</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARDS TEMÁTICOS ===== -->
+    <section id="cards" class="cards-section reveal">
+        <span class="section-tag center">Nossos pilares</span>
+        <h2>O que faz o Agro <span class="highlight">Forte</span></h2>
+        <div class="cards">
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Produção Responsável</h3>
+                <p>Técnicas que aumentam a produtividade respeitando o solo, a água e a biodiversidade local.</p>
+                <a href="producao.html" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-recycle"></i></div>
+                <h3>Sustentabilidade</h3>
+                <p>Uso consciente dos recursos naturais, energia limpa e economia circular no campo.</p>
+                <a href="sustentabilidade.html" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                <h3>Desafios do Campo</h3>
+                <p>Entenda os obstáculos e as soluções inovadoras para uma agricultura cada vez mais forte.</p>
+                <a href="desafios.html" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Educação Rural</h3>
+                <p>Capacitação de jovens e produtores através de programas como o AGRINHO.</p>
+                <a href="#" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-satellite-dish"></i></div>
+                <h3>Tecnologia no Campo</h3>
+                <p>Drones, sensores e inteligência artificial transformando a lavoura em um ambiente de precisão.</p>
+                <a href="#" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <h3>Comunidade Forte</h3>
+                <p>Fortalecimento das famílias rurais, geração de renda e qualidade de vida no campo.</p>
+                <a href="#" class="card-link">Ver mais <i class="fas fa-arrow-right"></i></a>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTO ===== -->
+    <section class="quote-section reveal">
+        <div class="quote-container">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <blockquote>
+                "O agro não é só sobre plantar e colher. É sobre cuidar da terra que nos dá vida, pensar no amanhã e garantir que o campo continue forte por gerações."
+            </blockquote>
+            <div class="quote-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <div>
+                    <strong>Programa AGRINHO</strong>
+                    <span>Educação que transforma o campo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq reveal">
+        <span class="section-tag center">Dúvidas frequentes</span>
+        <h2>Perguntas <span class="highlight">Frequentes</span></h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    O que é o programa AGRINHO?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>É um dos maiores programas de responsabilidade social do Brasil, que leva temas como saúde, segurança e agricultura sustentável para escolas públicas do campo e da cidade.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Como a agricultura pode ser sustentável?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Através de técnicas como rotação de culturas, plantio direto, uso consciente da água, integração lavoura-pecuária-floresta e adoção de energias renováveis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Como posso participar do projeto?
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Entre em contato através da sua escola ou pelo nosso formulário de contato. Estudantes, professores e produtores rurais podem se envolver de diversas formas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="contact reveal">
+        <span class="section-tag center">Fale conosco</span>
+        <h2>Entre em <span class="highlight">Contato</span></h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! 🌱');">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Enviar mensagem
+            </button>
+        </form>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
-        <p>&copy; 2026 - Agro Forte | Futuro Sustentável</p>
-        <p>Um projeto educativo para o AGRINHO 2026</p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fas fa-seedling"></i> Agro Forte</h3>
+                <p>Um projeto educativo que conecta o campo ao futuro através da sustentabilidade e da educação.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="producao.html">Produção</a></li>
+                    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@agroforte.com.br</li>
+                    <li><i class="fas fa-phone"></i> (00) 0000-0000</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Paraná, Brasil</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 - Agro Forte | Futuro Sustentável</p>
+            <p>Um projeto educativo para o AGRINHO 2026 🌱</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
