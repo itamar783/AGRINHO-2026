@@ -42,7 +42,7 @@ body {
 
 /* ====================== TIPOGRAFIA ====================== */
 h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
-.highlight { color: var(--verde-medio); position: relative; }
+.highlight { color: var(--verde-medio); }
 .section-tag {
     display: inline-block;
     background: rgba(76, 175, 80, 0.1);
@@ -146,7 +146,8 @@ header {
 /* ====================== HERO ====================== */
 .hero {
     min-height: 100vh;
-    background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 0.85), rgba(76, 175, 80, 0.6)), 
+                url('assets/tecnologia-agro.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,11 +156,7 @@ header {
     position: relative;
     padding: 0 5%;
 }
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(0, 100, 0, 0.85), rgba(76, 175, 80, 0.6));
-}
+.hero-overlay { display: none; }
 .hero-content {
     position: relative;
     z-index: 2;
@@ -398,114 +395,6 @@ h2 {
     color: var(--texto-claro);
     margin-bottom: 1.5rem;
 }
-.card-link {
-    color: var(--verde-medio);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: var(--transicao);
-}
-.card-link:hover { gap: 1rem; }
-
-/* ====================== DEPOIMENTO ====================== */
-.quote-section {
-    background: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80') center/cover fixed;
-    position: relative;
-    color: white;
-}
-.quote-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 100, 0, 0.85);
-}
-.quote-container {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 2;
-}
-.quote-icon {
-    font-size: 3rem;
-    color: var(--verde-claro);
-    margin-bottom: 1.5rem;
-    opacity: 0.6;
-}
-blockquote {
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-}
-.quote-author {
-    display: inline-flex;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px 24px;
-    border-radius: 50px;
-    backdrop-filter: blur(10px);
-}
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    background: var(--verde-medio);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.quote-author strong { display: block; }
-.quote-author span { font-size: 0.85rem; opacity: 0.8; }
-
-/* ====================== FAQ ====================== */
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.faq-item {
-    background: white;
-    border-radius: 15px;
-    margin-bottom: 1rem;
-    box-shadow: var(--sombra);
-    overflow: hidden;
-}
-.faq-question {
-    width: 100%;
-    padding: 1.5rem;
-    background: none;
-    border: none;
-    text-align: left;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--verde-escuro);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: inherit;
-    transition: var(--transicao);
-}
-.faq-question:hover { color: var(--verde-medio); }
-.faq-question i {
-    transition: transform 0.3s;
-    color: var(--verde-medio);
-}
-.faq-item.active .faq-question i { transform: rotate(45deg); }
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-}
-.faq-answer p {
-    padding: 0 1.5rem 1.5rem;
-    color: var(--texto-claro);
-}
-.faq-item.active .faq-answer { max-height: 300px; }
 
 /* ====================== CONTATO ====================== */
 .contact { background: var(--cinza-claro); }
